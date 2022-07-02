@@ -1,0 +1,49 @@
+PPU-9f001199a7f23695cd41a2b25c1d0325da7565b5: 
+  Vehicle class select for every event:
+    Games: 
+      "Motorstorm":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x004fab54, 0x2fa3FFFF ]
+      
+  Speed up intro:
+    Games: 
+      "Motorstorm":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x004fcb40, 0x2fa3FFFF ] # skip prerendered video
+      - [ be32, 0x00601b90, 0x2f830031 ] 
+      - [ be32, 0x005fef0c, 0x2f830031 ] 
+      - [ be32, 0x0049dc3c, 0x38800001 ] # reduce 5s timeout
+      - [ be32, 0x0049dbfc, 0x38800001 ] # reduce 3s timeout
+      
+PPU-ce27dc64b44242beebb44c097449dd035de18e8b: 
+  Vehicle class select for every event:
+    Games: 
+      "Motorstorm Update 3.1 (Complete Edition)":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: Campaign only. Doesn't work on DLC or online
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x005ff654, 0x2fa3FFFF ]
+      
+  Speed up intro:
+    Games: 
+      "Motorstorm Update 3.1 (Complete Edition)":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00601634, 0x2fa3FFFF ] # skip prerendered video
+      - [ be32, 0x004fd09c, 0x2f830031 ] 
+      - [ be32, 0x004fa40c, 0x2f830031 ] 
+      - [ be32, 0x00598d98, 0x38800001 ] # reduce 5s timeout
+      - [ be32, 0x00598d58, 0x38800001 ] # reduce 3s timeout
